@@ -20,8 +20,8 @@ Siga os passos abaixo para executar a aplicação desde o clone até os testes:
 ### Passo 1: Clonar o Repositório
 No terminal, digite o seguinte comando para clonar o projeto:
 ```bash
-git clone... 
-cd ...
+git clone https://github.com/LeandroGuaridoOliveira/cp3-docker.git 
+cd dimdim-app
 ```
 *(Nota: Lembre-se de dar um `git init` na pasta `dimdim-app` e subir para o seu GitHub antes de gravar o vídeo).*
 
