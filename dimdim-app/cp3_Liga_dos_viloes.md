@@ -18,6 +18,5 @@ https://github.com/LeandroGuaridoOliveira/cp3-docker.git
 <br>
 
 **Link do Vídeo no YouTube com as evidências:**
-[COLOQUE_SEU_LINK_DO_YOUTUBE_AQUI]
-
+https://www.youtube.com/watch?v=1Hkq676oEpM
 ---
