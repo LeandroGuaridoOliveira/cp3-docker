@@ -1,0 +1,43 @@
+version: '3.8'
+
+services:
+  db_rm561760:
+    image: postgres:15-alpine
+    container_name: db_rm561760
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: dimdim123
+      POSTGRES_DB: dimdim
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata_rm561760:/var/lib/postgresql/data
+      - ./db/init.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      - dimdim_network
+
+  app_rm561760:
+    build:
+      context: ./app
+      dockerfile: Dockerfile
+    container_name: app_rm561760
+    environment:
+      DB_USER: postgres
+      DB_PASSWORD: dimdim123
+      DB_NAME: dimdim
+      DB_HOST: db_rm561760
+      PORT: 3000
+    ports:
+      - "3000:3000"
+    depends_on:
+      - db_rm561760
+    networks:
+      - dimdim_network
+
+volumes:
+  pgdata_rm561760: # Volume nomeado (requisito 01 e 06)
+
+networks:
+  dimdim_network:
+    name: dimdim_network_rm561760
+    driver: bridge
