@@ -13,7 +13,7 @@
 <br>
 
 **Link do Repositório no GitHub:**
-[COLOQUE_SEU_LINK_DO_GITHUB_AQUI]
+https://github.com/LeandroGuaridoOliveira/cp3-docker.git
 
 <br>
 
@@ -21,5 +21,3 @@
 [COLOQUE_SEU_LINK_DO_YOUTUBE_AQUI]
 
 ---
-
-*Nota: Para gerar o PDF a partir deste documento, você pode abri-lo em um visualizador Markdown (como o próprio VSCode ou GitHub) e usar a função "Imprimir" ou "Exportar" para PDF do seu sistema operacional.*
